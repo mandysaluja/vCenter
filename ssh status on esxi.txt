@@ -1,0 +1,2 @@
+Get-VMHost | Get-VMHostService | Where-Object {$_.Key -eq 'TSM-SSH'} | Select-Object -Property VMHost, Key, Label, Policy, Running
+ 
